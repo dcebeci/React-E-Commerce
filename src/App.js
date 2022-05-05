@@ -1,10 +1,12 @@
+import React from 'react'
 
 function App() {
   return (
-    <div className="App">
-        bağlantı deneme
+    <div>
+        E-ticaret
+
     </div>
-  );
+  )
 }
 
 export default App;
