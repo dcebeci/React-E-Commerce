@@ -19,7 +19,7 @@ const Product = ({product}) => {
             <Typrography variant='h2' color='textSecondary'>{product.name}</Typrography>
         </CardContent>
         <CardActions disableSpacing className={classes.CardActions}>
-            
+            düzenle
         </CardActions>
 
 
