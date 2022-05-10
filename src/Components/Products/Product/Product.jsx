@@ -1,5 +1,7 @@
 import React from 'react'
-import { Card, Cardmedia, CardContent, CardActions, Typrography, IconButton} from '@material-ui/core'
+import { Card,  CardContent, CardActions, IconButton} from '@material-ui/core'
+import {Typography} from '@mui/material';
+import Cardmedia from '@mui/material/Cardmedia';
 import { AddShoppingCart } from '@material-ui/icons'
 import useStyles from './styles';
 
