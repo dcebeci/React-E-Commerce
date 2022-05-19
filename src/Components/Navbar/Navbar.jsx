@@ -3,7 +3,7 @@ import { AppBar, Toolbar, IconButton, Badge, Menu, Typography} from '@material-u
 import { ShoppingCart } from '@material-ui/icons';
 import logo from '../../assets/commerce.png';
 import useStyles from './styles';
-const Navbar = () => {
+const Navbar = ( { totalItems } ) => {
     const classes = useStyles() ;
 return ( 
        <>
@@ -15,6 +15,13 @@ return (
                     </Typography>
                     <div className={classes.grow} />
                     <div className={classes.button} />
+                        <IconButton aria-label='Show cart items' color='inherit'>
+                            <Badge badgeContent = { totalItems} color="secondary">
+                                <ShoppingCart/>
+                            </Badge>
+
+
+                        </IconButton>
                 </Toolbar>
             </AppBar>
        </> 
