@@ -1,11 +1,14 @@
 import React from 'react'
 import { Container, Typography, Button, Grid} from '@material-ui/core'
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 import CartItem from './CartItem/CartItem';
 import useStyles from './styles';
+
 const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
     const classes = useStyles();
+  
+
   
     const handleEmptyCart = () => onEmptyCart();
   
@@ -44,4 +47,4 @@ const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
       </Container>
     );
   };
-export default Cart
+export default Cart;
