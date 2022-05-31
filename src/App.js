@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { commerce } from './lib/commerce';
-import { Products, Navbar } from './Components';
+import { Products, Navbar, Cart } from './Components';
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 const App = () => {
     const [products, setProducts] = useState([]);
@@ -23,11 +24,6 @@ const App = () => {
 
 
 
-
-
-
-
-
     useEffect(() => {
       fetchProducts();
       fetchCart();
@@ -35,10 +31,23 @@ const App = () => {
     console.log(products);
 
   return (
+    <Router>
     <div>
-      <Products products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />
       <Navbar totalItems={cart.total_items} handleDrawerToggle={handleAddToCart}  />
+      <Routes>
+        <Route exact path='/'>   
+            <Products products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />
+        </Route>
+        <Route exact path='/cart'>
+          <Cart cart={cart} />
+        </Route>
+       
+     
+      </Routes>
+      
     </div>
+    </Router>
+    
   )
 }
 
