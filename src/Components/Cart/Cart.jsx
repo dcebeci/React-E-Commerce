@@ -8,7 +8,7 @@ import useStyles from './styles';
 const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart , handleUpdateCartQty, handleEmptyCart, handleRemoveFromCart }) => {
     const classes = useStyles();
   
-
+.....
   
     const handleEmptyCart = () => onEmptyCart();
   
