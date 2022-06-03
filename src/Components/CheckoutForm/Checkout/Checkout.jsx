@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { Paper, Stepper, Step, StepLabel, Typography, CircularProgress, Divider, Button} from '@material-ui/core'
-import useStyles from './styles';
+import useStyles from '../styles';
 
 const steps = ['Shipping Adress', 'Payment details'];
 
