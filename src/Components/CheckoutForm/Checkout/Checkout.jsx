@@ -12,10 +12,13 @@ const Checkout = () => {
 
   const Confirmation = () => (
       <div>
-        Cfm
+        düzeleme.
       </div>
   )
 
+  const getInitial = str=>{
+    yield str[0];
+  }
 
 
   const Form = () => activeStep === 0
