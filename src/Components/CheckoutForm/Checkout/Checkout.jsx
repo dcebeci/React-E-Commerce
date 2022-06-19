@@ -16,9 +16,7 @@ const Checkout = () => {
       </div>
   )
 
-  const getInitial = str=>{
-    yield str[0];
-  }
+...
 
 
   const Form = () => activeStep === 0
