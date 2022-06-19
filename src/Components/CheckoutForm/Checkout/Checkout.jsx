@@ -16,7 +16,7 @@ const Checkout = () => {
       </div>
   )
 
-...
+
 
 
   const Form = () => activeStep === 0
